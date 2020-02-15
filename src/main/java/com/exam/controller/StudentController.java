@@ -6,10 +6,12 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.Student;
 import com.exam.serviceimpl.StudentServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Api(value = "学生接口",tags = "学生接口")
 public class StudentController {
 
     @Autowired

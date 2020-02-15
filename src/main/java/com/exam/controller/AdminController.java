@@ -4,10 +4,12 @@ import com.exam.entity.Admin;
 import com.exam.entity.ApiResult;
 import com.exam.serviceimpl.AdminServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Api(value = "管理员接口",tags = "提供管理员的增删改查")
 public class AdminController {
 
     private AdminServiceImpl adminService;

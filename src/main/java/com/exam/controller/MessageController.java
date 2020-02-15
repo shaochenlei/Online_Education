@@ -6,10 +6,12 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.Message;
 import com.exam.serviceimpl.MessageServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Api(value = "留言接口",tags = "留言接口")
 public class MessageController {
 
     @Autowired

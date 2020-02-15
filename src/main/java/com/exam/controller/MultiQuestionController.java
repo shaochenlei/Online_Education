@@ -4,6 +4,7 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.MultiQuestion;
 import com.exam.serviceimpl.MultiQuestionServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Api(value = "选择题题库",tags = "选择题题库")
 public class MultiQuestionController {
 
     @Autowired

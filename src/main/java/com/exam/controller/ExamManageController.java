@@ -6,10 +6,12 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.ExamManage;
 import com.exam.serviceimpl.ExamManageServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Api(value = "试卷接口",tags = "提供试卷的增删改查")
 public class ExamManageController {
 
     @Autowired

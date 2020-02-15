@@ -4,12 +4,14 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.Replay;
 import com.exam.serviceimpl.ReplayServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@Api(value = "回复接口",tags = "回复接口")
 public class ReplayController {
 
     @Autowired

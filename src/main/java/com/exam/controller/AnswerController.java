@@ -6,6 +6,7 @@ import com.exam.entity.ApiResult;
 import com.exam.serviceimpl.AnswerServiceImpl;
 import com.exam.util.ApiResultHandler;
 import com.exam.vo.AnswerVO;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@Api(value = "题库接口",tags = "查询所有题库")
 public class AnswerController {
 
     @Autowired

@@ -8,6 +8,7 @@ import com.exam.serviceimpl.JudgeQuestionServiceImpl;
 import com.exam.serviceimpl.MultiQuestionServiceImpl;
 import com.exam.util.ApiResultHandler;
 import com.exam.vo.Item;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@Api(value = "试题组卷",tags = "各类型试题组卷")
 public class ItemController {
 
     @Autowired

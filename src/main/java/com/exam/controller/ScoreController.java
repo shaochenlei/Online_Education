@@ -4,12 +4,14 @@ import com.exam.entity.ApiResult;
 import com.exam.entity.Score;
 import com.exam.serviceimpl.ScoreServiceImpl;
 import com.exam.util.ApiResultHandler;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@Api(value = "分数接口",tags = "分数接口")
 public class ScoreController {
     @Autowired
     private ScoreServiceImpl scoreService;
